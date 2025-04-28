@@ -1,0 +1,52 @@
+body {
+    background-image: url("imagens/img.png ");
+    background-repeat: no-repeat;
+    background-size:cover; /* Faz a imagem cobrir a tela */
+    background-position:center; /* Centraliza */
+    margin:0;
+    min-height: 100dvh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+  
+  h1{
+    text-align:center ;
+    color: rgb(81, 122, 57);
+  }
+
+  nav {
+    background-color: #f3e9e9df;
+    display: flex;
+   
+    padding: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align:right;
+    display: flex;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 94px;
+}
+
+footer {
+background-color:lightcyan;
+color: black;
+text-align: center;
+padding: 10px;
+font-size: 14px;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
