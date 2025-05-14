@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url('../img/planodefundo.png'); /* Adicione sua imagem de fundo aqui */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    flex: 1;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    gap: 20px; /* Espaçamento entre as "páginas" */
+}
+
+.page {
+    background-color: #d9ead3; /* Cor de fundo similar à imagem */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px; /* Largura aproximada de cada "página" */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none; /* Inicialmente escondemos todas as páginas */
+}
+
+.page.active {
+    display: block; /* A primeira página estará visível */
+}
+
+h2 {
+    color: #38761d; /* Cor do título similar */
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #a9b388;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #8fce00; /* Cor do botão similar */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #6b8e23;
+}
+
+button:first-child {
+    margin-right: 5px;
+}
